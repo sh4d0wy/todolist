@@ -19,6 +19,7 @@ function objectCreator(){
         done:false
     }
     render();
+    document.querySelector(".inputbox #value").value=" ";
 }
 
 function getTodo(item){
