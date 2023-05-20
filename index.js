@@ -1,3 +1,5 @@
+// Wanted to add one more feature of adding content through input field but due to exams, have to postponed it.
+
 todos = [
     {
         name:"Buy eggs",
