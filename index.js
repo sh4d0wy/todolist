@@ -1,20 +1,4 @@
-todos = [
-    {
-        name:"Buy eggs",
-        id:"1",
-        done:false
-    },
-    {
-        name:"Read Maths",
-        id:"2",
-        done:false
-    },
-    {
-        name:"Take a walk",
-        id:"3",
-        done:false
-    }
-]
+todos = []
 
 
 const to_do_list = document.getElementById("to_do_list");
@@ -25,6 +9,16 @@ function render(){
         to_do_list.appendChild(getTodo(item))
     });
 
+}
+
+function objectCreator(){
+    var value=document.querySelector(".inputbox #value").value;
+    todos[todos.length]={
+        name:value,
+        id:todos.length,
+        done:false
+    }
+    render();
 }
 
 function getTodo(item){
